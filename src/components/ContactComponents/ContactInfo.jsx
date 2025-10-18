@@ -9,7 +9,7 @@ const ContactInfo = () => {
         </svg>
       ),
       title: 'Email Us',
-      info: 'info@webcultivate.com'
+      info: 'webcultivate01@gmail.com'
     },
     {
       icon: (
@@ -18,7 +18,7 @@ const ContactInfo = () => {
         </svg>
       ),
       title: 'Call Us',
-      info: '+1 (555) 123-4567'
+      info: '+91 7447746247 • +91 7887472660'
     },
     {
       icon: (
@@ -27,8 +27,8 @@ const ContactInfo = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      title: 'Visit Us',
-      info: '123 Web Street, Digital City, DC 12345'
+      title: 'Location',
+      info: 'Pune • Amravati • Nagpur'
     },
     {
       icon: (
@@ -37,7 +37,7 @@ const ContactInfo = () => {
         </svg>
       ),
       title: 'Working Hours',
-      info: 'Mon - Fri: 9:00 AM - 6:00 PM'
+      info: 'Mon - sat: 9:00 AM - 10:00 PM'
     }
   ];
 
