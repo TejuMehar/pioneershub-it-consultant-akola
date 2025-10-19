@@ -197,32 +197,34 @@ const ProjectsSection = () => {
 
         {/* View More / View Less Button */}
         <div className="text-center mt-12">
-          <button
-            onClick={handleToggleProjects}
-            className="inline-block px-8 py-3.5 rounded-xl font-semibold text-primary dark:text-primary-light bg-white dark:bg-slate-900 border-2 border-primary dark:border-primary-light shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-400 mr-4"
-          >
-            {showAll ? (
-              <>
-                View Less
-                <svg className="w-5 h-5 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
-                </svg>
-              </>
-            ) : (
-              <>
-                View More Projects
-                <svg className="w-5 h-5 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                </svg>
-              </>
-            )}
-          </button>
-          <Link
-            to="/contact"
-            className="inline-block px-8 py-3.5 rounded-xl font-semibold text-white bg-gradient-to-r from-primary to-primary-dark shadow-lg shadow-primary/35 hover:shadow-xl hover:shadow-primary/45 hover:-translate-y-1 transition-all duration-400"
-          >
-            Start Your Project
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button
+              onClick={handleToggleProjects}
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl font-semibold text-sm sm:text-base text-primary dark:text-primary-light bg-white dark:bg-slate-900 border-2 border-primary dark:border-primary-light shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-400"
+            >
+              {showAll ? (
+                <>
+                  View Less
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
+                  </svg>
+                </>
+              ) : (
+                <>
+                  View More Projects
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 inline-block ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </>
+              )}
+            </button>
+            <Link
+              to="/contact"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-3.5 rounded-xl font-semibold text-sm sm:text-base text-white bg-gradient-to-r from-primary to-primary-dark shadow-lg shadow-primary/35 hover:shadow-xl hover:shadow-primary/45 hover:-translate-y-1 transition-all duration-400"
+            >
+              Start Your Project
+            </Link>
+          </div>
         </div>
       </div>
     </section>
