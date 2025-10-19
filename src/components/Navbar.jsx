@@ -64,7 +64,7 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative font-medium text-gray-800 dark:text-gray-200 hover:text-primary transition-all duration-300 after:content-[''] after:absolute after:bottom-[-5px] after:left-1/2 after:-translate-x-1/2 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:rounded after:transition-all after:duration-300 hover:after:w-full ${
+                className={`relative font-medium text-gray-800 dark:text-gray-200 hover:text-primary transition-all duration-300  ${
                   location.pathname === link.path ? 'text-primary after:w-full' : ''
                 }`}
                 onClick={() => setIsMobileMenuOpen(false)}
