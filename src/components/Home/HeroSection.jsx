@@ -47,15 +47,18 @@ const HeroSection = () => {
   </div>
 
   {/* Center Circle with Logo */}
-  <div className="relative w-[350px] h-[350px] bg-gradient-to-br from-primary to-primary-dark rounded-full opacity-10 flex items-center justify-center">
+  <div className="relative w-[350px] h-[350px] flex items-center justify-center">
+    {/* Background gradient circle */}
+    <div className="absolute w-full h-full bg-gradient-to-br from-primary to-primary-dark rounded-full opacity-25"></div>
+    
     {/* Rotating glow */}
-    <div className="absolute -inset-5 bg-gradient-to-br from-primary-dark to-primary rounded-full opacity-50 animate-rotate"></div>
+    <div className="absolute -inset-5 bg-gradient-to-br from-primary-dark to-primary rounded-full opacity-30 animate-rotate"></div>
 
     {/* WebCultivate logo */}
     <img 
       src={logo}
       alt="WebCultivate Logo" 
-      className="w-[250px] h-[250px] object-contain text-black relative z-10"
+      className="w-[350px] h-[350px] object-contain relative z-10"
     />
   </div>
 </div>
