@@ -6,7 +6,7 @@ import {
   ToolsTechnologies, 
   ProjectTimeline, 
   ProcessCTA 
-} from '../components/WorkProcessComponents';
+} from '../components/WorkProcess';
 
 const WorkProcess = () => {
   return (

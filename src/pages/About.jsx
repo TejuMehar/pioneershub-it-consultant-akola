@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageHeader } from '../components/shared';
-import { AboutSection, MissionVisionValues, WhyChooseUs } from '../components/AboutComponents';
+import { AboutSection, MissionVisionValues, WhyChooseUs } from '../components/About';
 
 const About = () => {
   return (

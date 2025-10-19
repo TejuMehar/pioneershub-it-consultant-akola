@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageHeader } from '../components/shared';
-import { ContactInfo, ContactForm } from '../components/ContactComponents';
+import { ContactInfo, ContactForm } from '../components/Contact';
 
 const Contact = () => {
   return (

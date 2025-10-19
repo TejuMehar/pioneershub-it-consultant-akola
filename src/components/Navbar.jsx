@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -56,7 +55,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-5">
         <div className="flex items-center justify-between py-5">
           <Link to="/" className="flex items-center gap-0 text-2xl font-extrabold tracking-tight bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent hover:scale-105 transition-transform duration-300">
-            <span className="font-extrabold">Web</span>
+            <span className="font-bold">Web</span>
             <span className="font-semibold">Cultivate</span>
           </Link>
 

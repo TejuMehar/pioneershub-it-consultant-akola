@@ -60,15 +60,15 @@ const Footer = () => {
             <ul className="flex flex-col gap-4">
               <li className="flex items-start gap-3">
                 <i className="fas fa-envelope text-primary mt-1"></i>
-                <span className="text-gray-300 dark:text-slate-400">info@webcultivate.com</span>
+                <span className="text-gray-300 dark:text-slate-400">webcultivate01@gmail.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <i className="fas fa-phone text-primary mt-1"></i>
-                <span className="text-gray-300 dark:text-slate-400">+1 (555) 123-4567</span>
+                <span className="text-gray-300 dark:text-slate-400">+91 7447746247 ||   +91 7887472660 </span>
               </li>
               <li className="flex items-start gap-3">
                 <i className="fas fa-map-marker-alt text-primary mt-1"></i>
-                <span className="text-gray-300 dark:text-slate-400">123 Web Street, Digital City</span>
+                <span className="text-gray-300 dark:text-slate-400">Pune • Amravati • Nagpur</span>
               </li>
             </ul>
           </div>

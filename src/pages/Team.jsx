@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageHeader } from '../components/shared';
-import { TeamIntro, TeamGrid, TeamCTA } from '../components/TeamComponents';
+import { TeamIntro, TeamGrid, TeamCTA } from '../components/Team';
 
 const Team = () => {
   return (

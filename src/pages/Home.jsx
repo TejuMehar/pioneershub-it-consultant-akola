@@ -6,7 +6,7 @@ import {
   ProjectsSection,
   WorkProcessPreview,
   CTASection
-} from '../components/HomeComponents';
+} from '../components/Home';
 
 const Home = () => {
   return (

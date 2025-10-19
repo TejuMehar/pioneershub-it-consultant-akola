@@ -25,15 +25,15 @@ const AboutSection = () => {
           </div>
           <div className="grid grid-cols-1 gap-6">
             <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700">
-              <h3 className="text-4xl font-bold text-primary mb-2">100+</h3>
+              <h3 className="text-4xl font-bold text-primary mb-2">10+</h3>
               <p className="text-gray-600 dark:text-gray-400">Projects Completed</p>
             </div>
             <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700">
-              <h3 className="text-4xl font-bold text-primary mb-2">50+</h3>
+              <h3 className="text-4xl font-bold text-primary mb-2">5+</h3>
               <p className="text-gray-600 dark:text-gray-400">Happy Clients</p>
             </div>
             <div className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700">
-              <h3 className="text-4xl font-bold text-primary mb-2">5+</h3>
+              <h3 className="text-4xl font-bold text-primary mb-2">2+</h3>
               <p className="text-gray-600 dark:text-gray-400">Years Experience</p>
             </div>
           </div>
