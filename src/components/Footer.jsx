@@ -29,7 +29,7 @@ const Footer = () => {
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="w-11 h-11 rounded-xl bg-white/10 dark:bg-white/5 flex items-center justify-center transition-all duration-400 ease-in-out backdrop-blur-md border border-white/10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/35 hover:border-transparent">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-11 h-11 rounded-xl bg-white/10 dark:bg-white/5 flex items-center justify-center transition-all duration-400 ease-in-out backdrop-blur-md border border-white/10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/35 hover:border-transparent">
+              <a href="https://www.linkedin.com/company/webcultivate/?viewAsMember=true" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="w-11 h-11 rounded-xl bg-white/10 dark:bg-white/5 flex items-center justify-center transition-all duration-400 ease-in-out backdrop-blur-md border border-white/10 hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/35 hover:border-transparent">
                 <i className="fab fa-linkedin-in"></i>
               </a>
             </div>
