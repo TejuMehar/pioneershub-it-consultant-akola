@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1 text-center lg:text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-800 dark:text-gray-100 mb-4 sm:mb-5 md:mb-6 leading-tight tracking-tight">
-              Modern Web Solutions for <span className="relative inline-block bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent after:content-[''] after:absolute after:-bottom-1 sm:after:-bottom-2 after:left-0 after:w-full after:h-0.5 sm:after:h-1 after:bg-gradient-to-r after:from-primary after:to-primary-dark after:rounded after:opacity-30">Growing Brands</span>
+              Modern Web Solutions for <span className="relative inline-block bg-gradient-to-r from-primary to-gray-400 bg-clip-text text-transparent after:content-[''] after:absolute after:-bottom-1 sm:after:-bottom-2 after:left-0 after:w-full after:h-0.5 sm:after:h-1 after:bg-gradient-to-r after:from-primary after:to-primary-dark after:rounded after:opacity-10">Growing Brands</span>
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-6 sm:mb-8 md:mb-9 leading-relaxed max-w-full lg:max-w-[90%] mx-auto lg:mx-0">
               WebCultivate is your go-to freelancing partner for web design, development, and branding. 
