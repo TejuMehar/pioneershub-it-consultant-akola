@@ -71,35 +71,35 @@ const TestimonialsGrid = () => {
   ];
 
   return (
-    <section className="py-20">
-      <div className="max-w-7xl mx-auto px-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <section className="py-12 sm:py-16 md:py-20">
+      <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="relative bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+              className="relative bg-white dark:bg-slate-900 p-6 sm:p-7 md:p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
             >
-              <div className="absolute top-4 right-4 text-6xl text-primary/10 font-serif">"</div>
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-gray-400 dark:text-gray-500 flex-shrink-0">
-                  <div className="w-10 h-10">
+              <div className="absolute top-3 sm:top-4 right-3 sm:right-4 text-5xl sm:text-6xl text-primary/10 font-serif">"</div>
+              <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+                <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-gray-400 dark:text-gray-500 flex-shrink-0">
+                  <div className="w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10">
                     {testimonial.image}
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-800 dark:text-gray-100">
+                  <h3 className="font-bold text-sm sm:text-base text-gray-800 dark:text-gray-100">
                     {testimonial.name}
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-400">
+                  <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-400">
                     {testimonial.role}
                   </p>
                 </div>
               </div>
-              <div className="flex gap-1 mb-4">
+              <div className="flex gap-1 mb-3 sm:mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <svg
                     key={i}
-                    className="w-5 h-5 text-yellow-400"
+                    className="w-4 h-4 sm:w-5 sm:h-5 text-yellow-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -107,7 +107,7 @@ const TestimonialsGrid = () => {
                   </svg>
                 ))}
               </div>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                 {testimonial.text}
               </p>
             </div>

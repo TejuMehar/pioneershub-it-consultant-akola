@@ -32,18 +32,18 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-white dark:bg-slate-900" id="services">
-      <div className="max-w-7xl mx-auto px-5">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Our Services</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Comprehensive digital solutions tailored to your business needs</p>
+    <section className="py-12 sm:py-16 md:py-20 bg-white dark:bg-slate-900" id="services">
+      <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8">
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-3 sm:mb-4">Our Services</h2>
+          <p className="text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto px-4">Comprehensive digital solutions tailored to your business needs</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8 lg:gap-9">
           {services.map((service, index) => (
-            <div key={index} className="relative bg-white dark:bg-slate-800 p-11 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-400 hover:shadow-xl hover:-translate-y-2 text-center overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-primary before:to-secondary before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-400">
-              <div className="text-primary dark:text-primary-light mb-5 flex justify-center">{service.icon}</div>
-              <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-3">{service.title}</h3>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{service.description}</p>
+            <div key={index} className="relative bg-white dark:bg-slate-800 p-8 sm:p-9 md:p-10 lg:p-11 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-400 hover:shadow-xl hover:-translate-y-2 text-center overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-primary before:to-secondary before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-400">
+              <div className="text-primary dark:text-primary-light mb-4 sm:mb-5 flex justify-center">{service.icon}</div>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2 sm:mb-3">{service.title}</h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

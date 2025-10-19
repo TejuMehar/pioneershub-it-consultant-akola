@@ -71,27 +71,27 @@ const ProcessTimeline = () => {
   ];
 
   return (
-    <section className="py-20">
-      <div className="max-w-5xl mx-auto px-5">
-        <div className="space-y-8">
+    <section className="py-12 sm:py-16 md:py-20">
+      <div className="max-w-5xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8">
+        <div className="space-y-6 sm:space-y-7 md:space-y-8">
           {processes.map((process, index) => (
-            <div key={index} className="flex gap-6 items-start">
+            <div key={index} className="flex flex-col sm:flex-row gap-4 sm:gap-5 md:gap-6 items-start">
               {/* Icon Box */}
-              <div className="flex-shrink-0">
-                <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-primary dark:text-primary-light">
+              <div className="flex-shrink-0 mx-auto sm:mx-0">
+                <div className="w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center text-primary dark:text-primary-light">
                   {process.icon}
                 </div>
               </div>
               
               {/* Content Card */}
-              <div className="flex-1 bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-                <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+              <div className="flex-1 bg-white dark:bg-slate-900 p-5 sm:p-6 md:p-7 lg:p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2">
                   {process.title}
                 </h3>
-                <p className="text-gray-500 dark:text-gray-500 mb-3 text-sm italic">
+                <p className="text-gray-500 dark:text-gray-500 mb-2 sm:mb-3 text-xs sm:text-sm italic">
                   {process.description}
                 </p>
-                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
                   {process.details}
                 </p>
               </div>
