@@ -88,14 +88,14 @@ const TechnologyStack = () => {
             >
               <div className="flex flex-col items-center text-center">
                 {/* Icon */}
-<div className="w-10 h-10 sm:w-16 sm:h-16 lg:w-20 lg:h-20 mb-3 sm:mb-4 flex items-center justify-center bg-white dark:bg-slate-700/50 rounded-full p-2 border-2  border-blue-500">
-  <img
-    src={tech.icon}
-    alt={tech.name}
-    className="w-full h-full object-contain filter grayscale p-2 group-hover:scale-110 transition-transform duration-300"
-    loading="lazy"
-  />
-</div>
+                 <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 mb-3 sm:mb-4 flex items-center justify-center bg-white dark:bg-slate-700/50 rounded-full border-2 border-blue-500">
+                   <img
+                    src={tech.icon}
+                    alt={tech.name}
+                    className="w-3/4 h-3/4 object-contain filter grayscale group-hover:scale-110 transition-transform duration-300"
+                    loading="lazy"
+                  />
+                </div>
                 
                 {/* Name */}
                 <h3 className="text-sm sm:text-base lg:text-lg font-semibold text-gray-800 dark:text-gray-100 mb-1 sm:mb-2">
