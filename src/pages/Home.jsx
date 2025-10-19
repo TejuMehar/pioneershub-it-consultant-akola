@@ -5,7 +5,8 @@ import {
   GrowthSection,
   ProjectsSection,
   WorkProcessPreview,
-  CTASection
+  CTASection,
+  TechnologyStack
 } from '../components/Home';
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <ServicesSection />
       <GrowthSection />
       <ProjectsSection />
+      <TechnologyStack />
       <WorkProcessPreview />
       <CTASection />
     </div>
