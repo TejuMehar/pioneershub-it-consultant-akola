@@ -25,16 +25,16 @@ const AboutSection = () => {
           </div>
           <div className="grid grid-cols-1 gap-4 sm:gap-5 md:gap-6 order-1 lg:order-2">
             <div className="bg-white dark:bg-slate-900 p-6 sm:p-7 md:p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700">
-              <h3 className="text-3xl sm:text-4xl font-bold text-primary mb-2">10+</h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">Projects Completed</p>
+              <h3 className="text-3xl text-center sm:text-4xl font-bold text-primary mb-2">10+</h3>
+              <p className="text-sm sm:text-base text-center text-gray-600 dark:text-gray-400">Projects Completed</p>
             </div>
             <div className="bg-white dark:bg-slate-900 p-6 sm:p-7 md:p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700">
-              <h3 className="text-3xl sm:text-4xl font-bold text-primary mb-2">5+</h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">Happy Clients</p>
+              <h3 className="text-3xl sm:text-4xl text-center font-bold text-primary mb-2">5+</h3>
+              <p className="text-sm sm:text-base text-center text-gray-600 dark:text-gray-400">Happy Clients</p>
             </div>
             <div className="bg-white dark:bg-slate-900 p-6 sm:p-7 md:p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700">
-              <h3 className="text-3xl sm:text-4xl font-bold text-primary mb-2">2+</h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">Years Experience</p>
+              <h3 className="text-3xl sm:text-4xl text-center font-bold text-primary mb-2">2+</h3>
+              <p className="text-sm sm:text-base text-center text-gray-600 dark:text-gray-400">Years Experience</p>
             </div>
           </div>
         </div>
