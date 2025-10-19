@@ -54,9 +54,9 @@ const Navbar = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8">
         <div className="flex items-center justify-between py-3 sm:py-4 md:py-5">
-          <Link to="/" className="flex items-center gap-0 text-xl sm:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 z-50">
-            <span className="font-bold">Web</span>
-            <span className="font-semibold">Cultivate</span>
+          <Link to="/" className="flex items-center gap-0 text-3xl sm:text-2xl font-extrabold tracking-tight bg-gradient-to-r from-primary to-gray-600 bg-clip-text text-transparent hover:scale-105 transition-transform duration-300 z-50">
+            <span className="font-bold">WebCultivate</span>
+            {/* <span className="font-bold">Cultivate</span> */}
           </Link>
 
           <div className={`md:flex items-center gap-6 lg:gap-9 ${isMobileMenuOpen ? 'flex flex-col absolute top-full left-0 right-0 bg-white dark:bg-slate-900 p-6 shadow-lg border-t border-gray-200 dark:border-slate-700' : 'hidden'}`}>
@@ -109,7 +109,7 @@ const Navbar = () => {
               </div>
             </button>
 
-            <Link to="/contact" className="hidden md:inline-block px-5 lg:px-8 py-2.5 lg:py-3.5 text-sm lg:text-base rounded-xl font-semibold text-white bg-gradient-to-r from-primary to-primary-dark shadow-lg shadow-primary/35 hover:shadow-xl hover:shadow-primary/45 hover:-translate-y-1 transition-all duration-400 ease-in-out relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-all before:duration-500 hover:before:left-full">
+            <Link to="/contact" className="hidden md:inline-block px-5 lg:px-8 py-2.5 lg:py-3.5 text-sm lg:text-base rounded-xl font-semibold text-white bg-gradient-to-r from-primary to-gray-300 shadow-lg shadow-primary/35 hover:shadow-xl hover:shadow-primary/45 hover:-translate-y-1 transition-all duration-400 ease-in-out relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-all before:duration-500 hover:before:left-full">
               Get Started
             </Link>
           </div>

@@ -2,10 +2,10 @@ import React from 'react';
 
 const StatsSection = () => {
   const stats = [
-    { value: '100+', label: 'Projects Completed' },
-    { value: '50+', label: 'Happy Clients' },
-    { value: '5+', label: 'Years Experience' },
-    { value: '98%', label: 'Client Satisfaction' }
+    { value: '10+', label: 'Projects Completed' },
+    { value: '5+', label: 'Happy Clients' },
+    { value: '2+', label: 'Years Experience' },
+    { value: '80%', label: 'Client Satisfaction' }
   ];
 
   return (
