@@ -109,7 +109,7 @@ const Navbar = () => {
               </div>
             </button>
 
-            <Link to="/contact" className="hidden md:inline-block px-5 lg:px-8 py-2.5 lg:py-3.5 text-sm lg:text-base rounded-xl font-semibold text-white bg-gradient-to-r from-primary to-primary-dark shadow-lg shadow-primary/35 hover:shadow-xl hover:shadow-primary/45 hover:-translate-y-1 transition-all duration-400 ease-in-out relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-all before:duration-500 hover:before:left-full">
+            <Link to="/contact" className="hidden md:inline-block px-5 lg:px-8 py-2.5 lg:py-3.5 text-sm lg:text-base rounded-xl font-semibold text-white bg-gradient-to-r from-primary to-gray-300 shadow-lg shadow-primary/35 hover:shadow-xl hover:shadow-primary/45 hover:-translate-y-1 transition-all duration-400 ease-in-out relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-all before:duration-500 hover:before:left-full">
               Get Started
             </Link>
           </div>

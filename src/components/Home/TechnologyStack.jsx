@@ -9,7 +9,7 @@ const technologies = [
   {
     name: 'Next.js',
     description: 'Optimized performance with server-side rendering and SEO.',
-    icon: 'https://cdn.worldvectorlogo.com/logos/next-js.svg',
+    icon: 'https://images-cdn.openxcell.com/wp-content/uploads/2024/07/24154156/dango-inner-2.webp',
   },
   {
     name: 'Tailwind CSS',
@@ -92,7 +92,7 @@ const TechnologyStack = () => {
                   <img
                     src={tech.icon}
                     alt={tech.name}
-                    className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-300"
+                    className="w-full h-full object-contain filter grayscale group-hover:scale-110 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
