@@ -3,12 +3,8 @@ import { Link } from 'react-router-dom';
 
 const CTASection = () => {
   return (
-    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute -top-20 -right-20 w-72 h-72 bg-primary/10 dark:bg-primary/20 rounded-full blur-3xl"></div>
-      <div className="absolute -bottom-20 -left-20 w-72 h-72 bg-secondary/10 dark:bg-secondary/20 rounded-full blur-3xl"></div>
-      
-      <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8 relative z-10">
+    <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-blue-50 via-sky-50 to-indigo-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+      <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8">
         <div className="text-center bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-3xl p-8 sm:p-10 md:p-12 lg:p-16 shadow-2xl border border-gray-200 dark:border-slate-700">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
             Ready to Start Your Project?

@@ -3,7 +3,6 @@ import { PageHeader } from '../components/shared';
 import { 
   ProcessTimeline, 
   MethodologySection, 
-  ToolsTechnologies, 
   ProjectTimeline, 
   ProcessCTA 
 } from '../components/WorkProcess';
@@ -17,7 +16,6 @@ const WorkProcess = () => {
       />
       <ProcessTimeline />
       <MethodologySection />
-      <ToolsTechnologies />
       <ProjectTimeline />
       <ProcessCTA />
     </div>
