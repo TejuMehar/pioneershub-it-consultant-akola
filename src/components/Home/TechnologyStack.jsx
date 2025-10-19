@@ -80,7 +80,7 @@ const TechnologyStack = () => {
         </div>
 
         {/* Technology Grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 sm:gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-6 lg:gap-6">
           {technologies.map((tech) => (
             <div
               key={tech.name}
@@ -88,7 +88,7 @@ const TechnologyStack = () => {
             >
               <div className="flex flex-col items-center text-center">
                 {/* Icon */}
-                <div className="w-12 h-12 sm:w-16 sm:h-16 lg:w-20 lg:h-20 mb-3 sm:mb-4 flex items-center justify-center bg-white dark:bg-slate-700/50 rounded-lg p-2">
+                <div className="w-10 h-10 sm:w-16 sm:h-16 lg:w-20 lg:h-20 mb-3 sm:mb-4 flex items-center justify-center bg-white dark:bg-slate-700/50 rounded-lg p-2">
                   <img
                     src={tech.icon}
                     alt={tech.name}

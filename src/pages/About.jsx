@@ -1,6 +1,7 @@
 import React from 'react';
 import { PageHeader } from '../components/shared';
 import { AboutSection, MissionVisionValues, WhyChooseUs } from '../components/About';
+import TrustedClient from '../components/About/TrustedClient';
 
 const About = () => {
   return (
@@ -11,6 +12,7 @@ const About = () => {
       />
       <AboutSection />
       <MissionVisionValues />
+      <TrustedClient/>
       <WhyChooseUs />
     </div>
   );
