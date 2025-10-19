@@ -51,10 +51,10 @@ const WhyChooseUs = () => {
               key={index}
               className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
-              <span className="text-5xl font-extrabold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent mb-3 block">
+              <span className="text-5xl text-center font-extrabold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent mb-3 block">
                 {reason.number}
               </span>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">
+              <h3 className="text-xl text-center font-bold text-gray-800 dark:text-gray-100 mb-2">
                 {reason.title}
               </h3>
               <p className="text-gray-600 dark:text-gray-400">

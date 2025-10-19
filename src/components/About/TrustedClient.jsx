@@ -19,7 +19,7 @@ const TrustedClient = () => {
           Trusted by Leading Brands
         </h2>
         <p className="text-gray-500 mt-3 mb-10 text-sm sm:text-base">
-          Powering innovation across industries — from startups to global enterprises.
+          Powering innovation across industries from startups to global enterprises.
         </p>
 
         {/* Animated Scrolling Logos */}
