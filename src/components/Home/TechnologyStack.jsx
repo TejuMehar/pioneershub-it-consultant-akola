@@ -51,16 +51,16 @@ const technologies = [
     description: 'Minimal and flexible Node.js web application framework.',
     icon: 'https://cdn.worldvectorlogo.com/logos/express-109.svg',
   },
-  {
-    name: 'Firebase',
-    description: 'Platform by Google for building serverless web and mobile apps.',
-    icon: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg',
-  },
-  {
-    name: 'Flutter',
-    description: 'Build beautiful native apps with one codebase for iOS and Android.',
-    icon: 'https://cdn.worldvectorlogo.com/logos/flutter.svg',
-  },
+  // {
+  //   name: 'Firebase',
+  //   description: 'Platform by Google for building serverless web and mobile apps.',
+  //   icon: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg',
+  // },
+  // {
+  //   name: 'Flutter',
+  //   description: 'Build beautiful native apps with one codebase for iOS and Android.',
+  //   icon: 'https://cdn.worldvectorlogo.com/logos/flutter.svg',
+  // },
 ];
 
 const TechnologyStack = () => {
