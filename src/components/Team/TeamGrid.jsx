@@ -1,8 +1,8 @@
 import React from 'react';
-import Tejas from "../../assets/Tejas.png"
-import Vaidehi from "../../assets/vaidehi.png"
-import Om from   "../../assets/OmDhage.jpg"
-import Vaishnavi  from "../../assets/vaishnavi.jpg"
+import Tejas from "../../assets/Tejas.webp"
+import Vaidehi from "../../assets/vaidehi.webp"
+import Om from   "../../assets/OmDhage.webp"
+import Vaishnavi  from "../../assets/vaishnavi.webp"
 
 const TeamGrid = () => {
   const team = [

@@ -1,7 +1,7 @@
 import React from "react";
-import Client1 from "../../assets/Client1.png";
-import Client2 from "../../assets/Client2.png";
-import Client3 from "../../assets/Client3.png";
+import Client1 from "../../assets/Client1.webp";
+import Client2 from "../../assets/Client2.webp";
+import Client3 from "../../assets/Client3.webp";
 
 const TrustedClient = () => {
   const clients = [
