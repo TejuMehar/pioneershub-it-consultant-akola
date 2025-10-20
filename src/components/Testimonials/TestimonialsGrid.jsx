@@ -34,39 +34,6 @@ const TestimonialsGrid = () => {
       ),
       rating: 5,
       text: 'Professional, creative, and reliable. WebCultivate understood our brand vision and brought it to life perfectly. Their support is exceptional!'
-    },
-    {
-      name: 'David Thompson',
-      role: 'Owner, Local Bistro',
-      image: (
-        <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-        </svg>
-      ),
-      rating: 5,
-      text: 'The team at WebCultivate made the entire process smooth and enjoyable. Our new website has helped us attract more customers than ever.'
-    },
-    {
-      name: 'Lisa Martinez',
-      role: 'Creative Director, Design Hub',
-      image: (
-        <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-        </svg>
-      ),
-      rating: 5,
-      text: 'Incredible design skills and technical expertise! WebCultivate delivered exactly what we needed, on time and within budget.'
-    },
-    {
-      name: 'James Wilson',
-      role: 'Startup Founder, InnovateTech',
-      image: (
-        <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-        </svg>
-      ),
-      rating: 5,
-      text: 'From concept to launch, WebCultivate provided outstanding service. They are true professionals who care about their clients success.'
     }
   ];
 

@@ -3,6 +3,11 @@ import React from 'react';
 const ToolsTechnologies = () => {
   const categories = [
     {
+      name: 'Design',
+      color: 'from-pink-500 to-pink-600',
+      tools: ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'Sketch']
+    }
+    ,{
       name: 'Frontend',
       color: 'from-blue-500 to-blue-600',
       tools: ['React', 'Vue.js', 'Next.js', 'Tailwind CSS', 'TypeScript']
@@ -16,11 +21,6 @@ const ToolsTechnologies = () => {
       name: 'DevOps',
       color: 'from-purple-500 to-purple-600',
       tools: ['Docker', 'AWS', 'Vercel', 'GitHub Actions', 'Nginx']
-    },
-    {
-      name: 'Design',
-      color: 'from-pink-500 to-pink-600',
-      tools: ['Figma', 'Adobe XD', 'Photoshop', 'Illustrator', 'Sketch']
     }
   ];
 

@@ -40,11 +40,21 @@ const ServicesSection = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7 md:gap-8 lg:gap-9">
           {services.map((service, index) => (
-            <div key={index} className="relative bg-white dark:bg-slate-800 p-8 sm:p-9 md:p-10 lg:p-11 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 transition-all duration-400 hover:shadow-xl hover:-translate-y-2 text-center overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-1 before:bg-gradient-to-r before:from-primary before:to-secondary before:scale-x-0 hover:before:scale-x-100 before:transition-transform before:duration-400">
-              <div className="text-primary dark:text-primary-light mb-4 sm:mb-5 flex justify-center">{service.icon}</div>
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-2 sm:mb-3">{service.title}</h3>
-              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">{service.description}</p>
-            </div>
+             <div
+                 key={index}
+                 className="relative bg-white dark:bg-slate-800 p-8 sm:p-9 md:p-10 lg:p-11 rounded-2xl border border-gray-200 dark:border-slate-700 
+                 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 text-center"
+                 >
+                 <div className="text-primary dark:text-primary-light mb-4 sm:mb-5 flex justify-center">
+                 {service.icon}
+                 </div>
+                 <h3 className="text-xl sm:text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-2 sm:mb-3">
+                 {service.title}
+                 </h3>
+                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                 {service.description}
+                </p>
+             </div>
           ))}
         </div>
       </div>
