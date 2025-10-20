@@ -34,13 +34,13 @@ const PricingFAQ = () => {
     <section className="py-20 bg-gray-50 dark:bg-slate-800">
       <div className="max-w-4xl mx-auto p-4">
        <div className="mb-12 text-center">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 bg-clip-text text-transparent tracking-tight">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 bg-gradient-to-r from-gray-800 via-gray-700 to-gray-600 dark:from-white dark:via-gray-100 dark:to-gray-300 bg-clip-text text-transparent tracking-tight">
                Frequently Asked Questions
             </h2>
            <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300">
               Everything you need to know about our pricing and services
            </p>
-           <div className="mt-6 w-24 h-1 mx-auto bg-gradient-to-r from-gray-100 to-black rounded-full shadow-md"></div>
+           <div className="mt-6 w-24 h-1 mx-auto bg-gradient-to-r from-gray-100 to-black dark:from-gray-400 dark:to-gray-200 rounded-full shadow-md"></div>
        </div>
 
         <div className="divide-y divide-gray-300 dark:divide-gray-700">
