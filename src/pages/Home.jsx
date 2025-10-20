@@ -11,7 +11,8 @@ import {
 
 const Home = () => {
   return (
-    <div className="pt-20">
+    //  classname="pt-10"
+    <div>
       <HeroSection />
       <ServicesSection />
       <GrowthSection />

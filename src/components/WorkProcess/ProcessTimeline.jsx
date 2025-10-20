@@ -96,7 +96,7 @@ const ProcessTimeline = () => {
                           <div className={`group/card bg-white dark:bg-slate-800 p-6 lg:p-8 rounded-xl lg:rounded-2xl border-2 border-gray-200 dark:border-slate-700 hover:${process.borderColor} shadow-lg hover:shadow-xl transition-all duration-500 hover:scale-105 relative overflow-hidden`}>
                             
                             <div className="flex items-center gap-3 lg:gap-4 mb-3 lg:mb-4">
-                              <div className="text-4xl lg:text-5xl transition-transform duration-500 group-hover/card:scale-110">{process.icon}</div>
+                              <div className="text-4xl lg:text-5xl transition-transform  duration-500 group-hover/card:scale-110 filter grayscale">{process.icon}</div>
                               <div>
                                 <div className="text-xs lg:text-sm font-semibold text-gray-500 dark:text-gray-400">STEP {process.step}</div>
                                 <h3 className="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">{process.title}</h3>

@@ -4,7 +4,7 @@ import logo from "../../assets/logo.webp"
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-8 sm:pt-24 md:pt-28 lg:pt-32 pb-16 sm:pb-20 md:pb-24 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+    <section className="relative pt-20 sm:pt-24 md:pt-28 lg:pt-32 pb-16 sm:pb-20 md:pb-24 overflow-hidden bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
       <div className="absolute -top-1/2 -right-10 w-[300px] h-[300px] sm:w-[400px] sm:h-[400px] md:w-[600px] md:h-[600px] bg-primary/10 rounded-full blur-3xl animate-pulse-slow"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8">
