@@ -1,5 +1,5 @@
 import React from 'react';
-
+import salesforce from '../../assets/salesforce-2.svg'
 const technologies = [
   {
     name: 'React.js',
@@ -51,11 +51,11 @@ const technologies = [
     description: 'Minimal and flexible Node.js web application framework.',
     icon: 'https://cdn.worldvectorlogo.com/logos/express-109.svg',
   },
-  // {
-  //   name: 'Firebase',
-  //   description: 'Platform by Google for building serverless web and mobile apps.',
-  //   icon: 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg',
-  // },
+  {
+    name: 'Salesforce',
+    description: 'Platform by Salesforce for building CRM platforms.',
+    icon: salesforce,
+  },
   // {
   //   name: 'Flutter',
   //   description: 'Build beautiful native apps with one codebase for iOS and Android.',

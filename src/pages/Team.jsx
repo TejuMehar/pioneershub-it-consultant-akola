@@ -10,7 +10,7 @@ const Team = () => {
         subtitle="The talented people behind WebCultivate"
       />
       <TeamIntro />
-      <TeamGrid />
+      {/* <TeamGrid /> */}
       <TeamCTA />
     </div>
   );

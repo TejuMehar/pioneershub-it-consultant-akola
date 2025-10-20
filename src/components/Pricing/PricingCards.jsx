@@ -5,7 +5,7 @@ const PricingCards = () => {
   const plans = [
     {
       name: 'Starter',
-      price: '499',
+      // price: '499',
       period: 'per project',
       description: 'Perfect for small businesses and startups',
       features: [
@@ -20,7 +20,7 @@ const PricingCards = () => {
     },
     {
       name: 'Professional',
-      price: '999',
+      // price: '999',
       period: 'per project',
       description: 'Ideal for growing businesses',
       features: [
@@ -37,7 +37,7 @@ const PricingCards = () => {
     },
     {
       name: 'Enterprise',
-      price: 'Custom',
+      // price: 'Custom',
       period: 'per project',
       description: 'For large-scale projects',
       features: [
@@ -77,7 +77,7 @@ const PricingCards = () => {
                 {plan.name}
               </h3>
               <div className="mb-3 sm:mb-4">
-                {plan.price !== 'Custom' ? (
+                {/* {plan.price !== 'Custom' ? (
                   <div className="flex items-baseline">
                     <span className="text-2xl sm:text-3xl font-bold text-gray-800 dark:text-gray-100">$</span>
                     <span className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
@@ -88,7 +88,7 @@ const PricingCards = () => {
                   <span className="text-4xl sm:text-5xl font-extrabold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
                     {plan.price}
                   </span>
-                )}
+                )} */}
               </div>
               <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-2">{plan.period}</p>
               <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-5 sm:mb-6">{plan.description}</p>

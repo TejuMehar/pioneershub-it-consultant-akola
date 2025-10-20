@@ -1,4 +1,5 @@
 import React from 'react';
+import TeamGrid from './TeamGrid';
 
 const TeamIntro = () => {
   return (
@@ -15,6 +16,7 @@ const TeamIntro = () => {
           </p>
         </div>
       </div>
+        <TeamGrid />
     </section>
   );
 };

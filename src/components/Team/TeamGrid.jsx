@@ -40,11 +40,11 @@ const TeamGrid = () => {
     <section className="py-12 sm:py-16 lg:py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-gray-500 mb-8 sm:mb-10 md:mb-12">
             Meet the Team
           </h2>
-        </div>
+        </div> */}
 
         {/* Team Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 sm:gap-y-12 gap-x-6 sm:gap-x-8 max-w-6xl mx-auto text-center">
