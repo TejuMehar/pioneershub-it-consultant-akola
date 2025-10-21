@@ -11,28 +11,28 @@ const TeamGrid = () => {
       role: 'Full Stack Developer',
       imageUrl: Tejas,
       bio: 'Creating seamless web experiences as a Full Stack Developer.',
-      social: { linkedin: '#', twitter: '#', email: '#' },
+      social: { linkedin: 'https://www.linkedin.com/in/tejas-mehar/', twitter: '#', email: '#' },
     },
     {
       name: 'Vaidahi Kavi',
       role: 'Full Stack Developer',
       imageUrl: Vaidehi,
       bio: 'Building modern and scalable web applications as a Full Stack Developer',
-      social: { linkedin: '#', twitter: '#', email: '#' },
+      social: { linkedin: 'https://www.linkedin.com/in/vaidehi-kavi/', twitter: '#', email: '#' },
     },
     {
       name: 'Om Dhage',
       role: 'Frontend Developer',
       imageUrl: Om,
-      bio: 'Full-stack developer with expertise in React, Node.js, and cloud technologies.',
+      bio: 'Building seamless and responsive web experiences with React and modern frontend technologies',
       social: { linkedin: '#', twitter: '#', email: '#' },
     },
     {
       name: 'Vaishnavi Gharaat',
       role: 'Digital Marketer & Designer',
       imageUrl: Vaishnavi,
-      bio: 'Passionate about creating intuitive and beautiful user interfaces.',
-      social: { linkedin: '#', twitter: '#', email: '#' },
+      bio: 'Driving growth through creative digital marketing strategies.',
+      social: { linkedin: 'https://www.linkedin.com/in/vaishnavie-gharat-753369249/', twitter: '#', email: '#' },
     },
   ];
 
@@ -40,11 +40,11 @@ const TeamGrid = () => {
     <section className="py-12 sm:py-16 lg:py-20 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Title */}
-        <div className="text-center">
+        {/* <div className="text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-gray-500 dark:text-gray-300 mb-8 sm:mb-10 md:mb-12">
             Meet the Team
           </h2>
-        </div>
+        </div> */}
 
         {/* Team Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-y-10 sm:gap-y-12 gap-x-6 sm:gap-x-8 max-w-6xl mx-auto text-center">
