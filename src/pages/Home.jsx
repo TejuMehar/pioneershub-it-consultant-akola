@@ -16,7 +16,7 @@ const Home = () => {
       <HeroSection />
       <ServicesSection />
       <GrowthSection />
-      <ProjectsSection />
+      {/* <ProjectsSection /> */}
       <TechnologyStack />
       <WorkProcessPreview />
       <CTASection />

@@ -73,7 +73,7 @@ const Footer = () => {
               </li>
               <li className="flex items-start gap-3">
                 <i className="fas fa-map-marker-alt text-primary mt-1 flex-shrink-0"></i>
-                <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Pune • Amravati • Nagpur</span>
+                <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Pune • Nagpur • Amravati</span>
               </li>
             </ul>
           </div>
