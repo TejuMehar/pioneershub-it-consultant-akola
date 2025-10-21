@@ -34,7 +34,7 @@ const ProcessTimeline = () => {
       title: 'Testing',
       description: 'Quality assurance',
       details: 'Comprehensive testing validates functionality, performance, and security. Every feature is rigorously checked across browsers and devices to ensure flawless operation.',
-      icon: '✅',
+      icon: '✔',
       color: 'blue-600',
       borderColor: 'border-blue-600'
     },

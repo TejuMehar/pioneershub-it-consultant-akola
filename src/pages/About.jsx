@@ -5,7 +5,8 @@ import TrustedClient from '../components/About/TrustedClient';
 
 const About = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-20 bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+
       <PageHeader
         title="About WebCultivate"
         subtitle="Your Trusted Partner in Digital Transformation"
