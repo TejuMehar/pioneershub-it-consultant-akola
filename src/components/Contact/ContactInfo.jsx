@@ -28,7 +28,7 @@ const ContactInfo = () => {
         </svg>
       ),
       title: 'Location',
-      info: 'Pune • Amravati • Nagpur'
+      info: 'Pune • Nagpur • Amravati'
     },
     {
       icon: (
@@ -44,22 +44,17 @@ const ContactInfo = () => {
   const socialLinks = [
     {
       name: 'Facebook',
-      url: 'https://facebook.com',
+      url: 'https://www.facebook.com/share/1EJnUKMCmb/',
       icon: 'fab fa-facebook-f'
     },
     {
-      name: 'Twitter',
-      url: 'https://twitter.com',
-      icon: 'fab fa-twitter'
-    },
-    {
       name: 'Instagram',
-      url: 'https://instagram.com',
+      url: 'https://www.instagram.com/webcultivate?igsh=dHY4MzV0a3k3NHRy',
       icon: 'fab fa-instagram'
     },
     {
       name: 'LinkedIn',
-      url: 'https://linkedin.com',
+      url: 'https://www.linkedin.com/company/webcultivate/?viewAsMember=true',
       icon: 'fab fa-linkedin-in'
     }
   ];
