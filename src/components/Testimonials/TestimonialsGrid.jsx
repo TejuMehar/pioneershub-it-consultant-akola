@@ -3,8 +3,8 @@ import React from 'react';
 const TestimonialsGrid = () => {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
-      role: 'CEO, TechStart Inc.',
+      name: 'Kartikesh Ganoskar',
+      role: 'Founder of Cloud Graphics.',
       image: (
         <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -14,8 +14,8 @@ const TestimonialsGrid = () => {
       text: 'WebCultivate transformed our online presence completely. Their attention to detail and creative approach exceeded our expectations. Highly recommended!'
     },
     {
-      name: 'Michael Chen',
-      role: 'Founder, Ecommerce Plus',
+      name: 'Sanchit Pardhekar',
+      role: 'Founder, WedClicks Photography',
       image: (
         <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
@@ -25,8 +25,8 @@ const TestimonialsGrid = () => {
       text: 'Working with WebCultivate was a game-changer for our business. They delivered a stunning website that increased our conversions by 150%.'
     },
     {
-      name: 'Emily Rodriguez',
-      role: 'Marketing Director, GrowthCo',
+      name: 'Ale Crco',
+      role: 'Freelancer Content Writer',
       image: (
         <svg className="w-full h-full" fill="currentColor" viewBox="0 0 24 24">
           <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
