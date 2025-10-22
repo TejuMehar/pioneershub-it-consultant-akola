@@ -16,17 +16,35 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: 'website-design',
-      message: ''
-    });
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const { name, email, phone, service, message } = formData;
+
+  // Replace with your WhatsApp number (with country code, no + or spaces)
+  const phoneNumber = "917447746247";
+
+  const whatsappMessage = `Hello! I have a new inquiry 👋
+  
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Service: ${service}
+Message: ${message}`;
+
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+  window.open(whatsappUrl, "_blank");
+
+  setFormData({
+    name: "",
+    email: "",
+    phone: "",
+    service: "website-design",
+    message: ""
+  });
+};
+
 
   return (
  <div className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl p-4 sm:p-5 md:p-6 rounded-2xl sm:rounded-3xl shadow-2xl border border-gray-100 dark:border-slate-700 max-w-3xl w-full mx-auto transition-all duration-500 hover:shadow-primary/30">
