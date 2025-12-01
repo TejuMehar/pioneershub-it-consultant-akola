@@ -27,13 +27,13 @@ const TeamGrid = () => {
       bio: 'Building seamless and responsive web experiences with React and modern frontend technologies',
       social: { linkedin: '#', twitter: '#', email: '#' },
     },
-    {
-      name: 'Vaishnavi Gharaat',
-      role: 'Digital Marketer & Designer',
-      imageUrl: Vaishnavi,
-      bio: 'Driving growth through creative digital marketing strategies.',
-      social: { linkedin: 'https://www.linkedin.com/in/vaishnavie-gharat-753369249/', twitter: '#', email: '#' },
-    },
+    // {
+    // //   name: 'Vaishnavi Gharaat',
+    // //   role: 'Digital Marketer & Designer',
+    // //   imageUrl: Vaishnavi,
+    // //   bio: 'Driving growth through creative digital marketing strategies.',
+    // //   social: { linkedin: 'https://www.linkedin.com/in/vaishnavie-gharat-753369249/', twitter: '#', email: '#' },
+    // // },
   ];
 
   return (

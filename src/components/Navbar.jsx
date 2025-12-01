@@ -42,7 +42,7 @@ const Navbar = () => {
     { name: 'Work Process', path: '/work-process' },
     { name: 'Testimonials', path: '/testimonials' },
     { name: 'Pricing', path: '/pricing' },
-    { name: 'Team', path: '/team' },
+    // { name: 'Team', path: '/team' },
     { name: 'Contact Us', path: '/contact' },
   ];
 
