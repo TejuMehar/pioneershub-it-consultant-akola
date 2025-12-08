@@ -60,19 +60,17 @@ const Footer = () => {
             <ul className="flex flex-col gap-3 sm:gap-4 items-center sm:items-start">
               <li className="flex items-start gap-3">
                 <i className="fas fa-envelope text-primary mt-1 flex-shrink-0"></i>
-                <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300 break-all">webcultivate01@gmail.com</span>
+                <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300 break-all">info@webcultivate.com</span>
               </li>
               <li className="flex items-start gap-3">
                 <i className="fas fa-phone text-primary mt-1 flex-shrink-0"></i>
                 <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                  <span className="block sm:inline">+91 7447746247</span>
-                  <span className="hidden sm:inline"> || </span>
-                  <span className="block sm:inline">+91 7887472660</span>
+                  <span className="block sm:inline">+91 7821096438</span>
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <i className="fas fa-map-marker-alt text-primary mt-1 flex-shrink-0"></i>
-                <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Pune • Nagpur • Amravati</span>
+                <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">Sai Nagar Amravati</span>
               </li>
             </ul>
           </div>
