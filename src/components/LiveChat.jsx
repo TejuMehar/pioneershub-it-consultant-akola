@@ -31,7 +31,7 @@ const ScrollProgressButton = () => {
   };
 
   return (
-    <div className="fixed bottom-10 right-8 z-50 flex flex-col items-center space-y-3">
+    <div className="fixed bottom-10 right-5 z-50 flex flex-col items-center space-y-3">
       {/* WhatsApp Button */}
       <button
         onClick={openWhatsApp}
