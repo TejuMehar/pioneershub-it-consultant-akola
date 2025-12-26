@@ -6,18 +6,19 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900 text-gray-800 dark:text-white pt-12 sm:pt-16 md:pt-20 mt-16 sm:mt-20 md:mt-24 relative border-t border-gray-200 dark:border-slate-700 overflow-hidden">
-      {/* Decorative elements */}
-
       <div className="max-w-7xl mx-auto px-4 sm:px-5 md:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-8 sm:mb-10 text-center sm:text-left">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 mb-8 sm:mb-10 text-left">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <h3 className="text-xl sm:text-2xl font-extrabold tracking-tight mb-1 bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent">
+            <h3
+              className="text-xl sm:text-2xl font-extrabold tracking-tight mb-1
+  bg-gradient-to-r from-red-400 via-red-500 to-red-800
+  bg-clip-text text-transparent"
+            >
               Pioneers Hub
             </h3>
 
-            {/* Subtitle */}
-            <p className="text-xs sm:text-sm font-semibold  tracking-widest text-gray-500 dark:text-gray-400 mb-4">
+            <p className="text-xs sm:text-sm font-semibold tracking-widest text-gray-500 dark:text-gray-400 mb-4">
               IT Consultant & Training Institute
             </p>
 
@@ -27,39 +28,48 @@ const Footer = () => {
               success.
             </p>
 
-            <div className="flex gap-4 justify-center sm:justify-start">
+            <div className="flex gap-4 justify-start">
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="w-10 h-10 rounded-xl bg-white/60 dark:bg-white/10 flex items-center justify-center transition hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:-translate-y-1 hover:shadow-lg"
+                className="w-10 h-10 rounded-xl bg-white/60 dark:bg-white/10 
+               flex items-center justify-center transition-all duration-300
+               hover:bg-gradient-to-r hover:from-red-400 hover:via-red-500 hover:to-red-800
+               hover:-translate-y-1 hover:shadow-lg"
               >
-                <i className="fab fa-linkedin-in text-sm"></i>
+                <i className="fab fa-linkedin-in text-sm text-gray-700 dark:text-gray-200 hover:text-white"></i>
               </a>
 
               <a
                 href="#"
                 aria-label="Instagram"
-                className="w-10 h-10 rounded-xl bg-white/60 dark:bg-white/10 flex items-center justify-center transition hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:-translate-y-1 hover:shadow-lg"
+                className="w-10 h-10 rounded-xl bg-white/60 dark:bg-white/10 
+               flex items-center justify-center transition-all duration-300
+               hover:bg-gradient-to-r hover:from-red-400 hover:via-red-500 hover:to-red-800
+               hover:-translate-y-1 hover:shadow-lg"
               >
-                <i className="fab fa-instagram text-sm"></i>
+                <i className="fab fa-instagram text-sm text-gray-700 dark:text-gray-200 hover:text-white"></i>
               </a>
 
               <a
                 href="#"
                 aria-label="YouTube"
-                className="w-10 h-10 rounded-xl bg-white/60 dark:bg-white/10 flex items-center justify-center transition hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:-translate-y-1 hover:shadow-lg"
+                className="w-10 h-10 rounded-xl bg-white/60 dark:bg-white/10 
+               flex items-center justify-center transition-all duration-300
+               hover:bg-gradient-to-r hover:from-red-400 hover:via-red-500 hover:to-red-800
+               hover:-translate-y-1 hover:shadow-lg"
               >
-                <i className="fab fa-youtube text-sm"></i>
+                <i className="fab fa-youtube text-sm text-gray-700 dark:text-gray-200 hover:text-white"></i>
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="mb-5 font-semibold text-base sm:text-lg">
+            <h4 className="mb-5 font-semibold text-base sm:text-lg text-left">
               Quick Links
             </h4>
-            <ul className="flex flex-col gap-3 items-center sm:items-start">
+            <ul className="flex flex-col gap-3 items-start">
               <li>
                 <Link to="/" className="footer-link">
                   Home
@@ -85,10 +95,10 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="mb-5 font-semibold text-base sm:text-lg">
+            <h4 className="mb-5 font-semibold text-base sm:text-lg text-left">
               Our Services
             </h4>
-            <ul className="flex flex-col gap-3 items-center sm:items-start">
+            <ul className="flex flex-col gap-3 items-start">
               <li>
                 <span className="footer-link">Data Cleaning & Processing</span>
               </li>
@@ -106,26 +116,44 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="mb-5 font-semibold text-base sm:text-lg">
+            <h4 className="mb-5 font-semibold text-base sm:text-lg text-left">
               Contact Info
             </h4>
-            <ul className="flex flex-col gap-4 items-center sm:items-start">
-              <li className="flex gap-3">
-                <i className="fas fa-envelope text-primary mt-1"></i>
+
+            <ul className="flex flex-col gap-4 items-start">
+              <li className="flex gap-3 items-start">
+                <span
+                  className="w-9 h-9 rounded-full flex items-center justify-center
+                       bg-gradient-to-r from-red-400 via-red-500 to-red-800 text-white"
+                >
+                  <i className="fas fa-envelope text-sm"></i>
+                </span>
                 <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                   info@pioneershub.in
                 </span>
               </li>
-              <li className="flex gap-3">
-                <i className="fas fa-phone text-primary mt-1"></i>
+
+              <li className="flex gap-3 items-start">
+                <span
+                  className="w-9 h-9 rounded-full flex items-center justify-center
+                       bg-gradient-to-r from-red-400 via-red-500 to-red-800 text-white"
+                >
+                  <i className="fas fa-phone text-sm"></i>
+                </span>
                 <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
                   +91 9343771276
                 </span>
               </li>
-              <li className="flex gap-3">
-                <i className="fas fa-map-marker-alt text-primary mt-1"></i>
+
+              <li className="flex gap-3 items-start">
+                <span
+                  className="w-9 h-9 rounded-full flex items-center justify-center
+                       bg-gradient-to-r from-red-400 via-red-500 to-red-800 text-white"
+                >
+                  <i className="fas fa-map-marker-alt text-sm"></i>
+                </span>
                 <span className="text-sm sm:text-base text-gray-600 dark:text-gray-300">
-                  Bhuranpur, (Remote Services Available)
+                  Akola Maharashtra
                 </span>
               </li>
             </ul>
@@ -133,12 +161,12 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col md:flex-row items-center justify-between py-6 border-t border-gray-300 dark:border-slate-700 gap-3">
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between py-6 border-t border-gray-300 dark:border-slate-700 gap-3">
           <p className="text-sm text-gray-500 dark:text-gray-400 md:order-1">
             © {currentYear} Pioneers Hub. All rights reserved.
           </p>
 
-          <p className="text-sm text-gray-500 dark:text-gray-400 font-semibold md:order-0 text-center">
+          <p className="text-sm text-gray-500 dark:text-gray-400 font-semibold md:order-0 text-left">
             Developed by <a href="https://webcultivate.com/">WebCultivate</a>
           </p>
 

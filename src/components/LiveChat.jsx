@@ -1,29 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import { FaWhatsapp, FaArrowUp } from 'react-icons/fa';
+import { FaWhatsapp, FaArrowUp } from "react-icons/fa";
 
 const ScrollProgressButton = () => {
-  const [scrollPercent, setScrollPercent] = useState(0);
-
   // Manually set your phone number here
-  const phoneNumber = "917821096438"; // Replace with your number
-
-  // Handle scroll
-  const handleScroll = () => {
-    const scrollTop = window.scrollY;
-    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const scrolled = (scrollTop / docHeight) * 100;
-    setScrollPercent(scrolled);
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  // Scroll to top
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  const phoneNumber = "919343771276"; // Replace with your number
 
   // Open WhatsApp
   const openWhatsApp = () => {
@@ -41,7 +20,7 @@ const ScrollProgressButton = () => {
       </button>
 
       {/* Scroll Progress Button */}
-      <div
+      {/* <div
         onClick={scrollToTop}
         className="w-14 h-14 relative cursor-pointer"
       >
@@ -67,7 +46,7 @@ const ScrollProgressButton = () => {
           />
         </svg>
         <FaArrowUp className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-blue-600" />
-      </div>
+      </div> */}
     </div>
   );
 };

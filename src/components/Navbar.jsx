@@ -15,13 +15,13 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme === "dark") {
-      setIsDarkMode(true);
-      document.documentElement.setAttribute("data-theme", "dark");
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem("theme");
+  //   if (savedTheme === "dark") {
+  //     setIsDarkMode(true);
+  //     document.documentElement.setAttribute("data-theme", "dark");
+  //   }
+  // }, []);
 
   // const toggleTheme = () => {
   //   const newTheme = !isDarkMode;
@@ -39,9 +39,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About", path: "/about" },
-    { name: "Work Process", path: "/work-process" },
-    { name: "Testimonials", path: "/testimonials" },
-    { name: "Pricing", path: "/pricing" },
+    { name: "Services", path: "/services" },
     { name: "Contact Us", path: "/contact" },
   ];
 
@@ -57,66 +55,97 @@ const Navbar = () => {
         <div className="flex items-center justify-between py-2.5 sm:py-3 md:py-3.5 lg:py-4">
           <Link
             to="/"
-            className="flex flex-col leading-tight z-50 flex-shrink-0"
+            className="flex items-center gap-2 sm:gap-3 leading-tight z-50 flex-shrink-0"
           >
-            <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-primary to-gray-600 bg-clip-text text-transparent">
-              Pioneershub
-            </span>
-            <span className="text-xs sm:text-sm md:text-base font-medium text-gray-600">
-              IT Consultant & Training Institute
-            </span>
+            {/* Logo */}
+            {/* <img
+              src="/plogo.webp"
+              alt="Pioneershub Logo"
+              className="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 object-contain"
+            /> */}
+
+            {/* Text */}
+            <div className="flex flex-col">
+              <span
+                className="text-lg sm:text-2xl md:text-2xl lg:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-red-400 via-red-600 to-red-700
+                bg-clip-text text-transparent"
+              >
+                Pioneershub
+              </span>
+              <span className="text-xs sm:text-sm md:text-base font-medium text-gray-600">
+                IT Consultant
+              </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center gap-6 xl:gap-8 flex-1 justify-center mx-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`relative font-medium text-sm xl:text-base transition-all duration-300 hover:text-primary dark:hover:text-primary-light whitespace-nowrap ${
-                  location.pathname === link.path
-                    ? "text-primary dark:text-primary-light"
-                    : "text-gray-800 dark:text-gray-200"
-                }`}
-              >
-                {link.name}
-                {location.pathname === link.path && (
-                  <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-primary dark:bg-primary-light"></span>
-                )}
-              </Link>
-            ))}
+            {navLinks.map((link) => {
+              const isActive = location.pathname === link.path;
+
+              return (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className={`relative font-medium text-sm xl:text-base transition-all duration-300 whitespace-nowrap
+          ${
+            isActive
+              ? "bg-gradient-to-r from-red-400 via-red-500 to-red-800 bg-clip-text text-transparent"
+              : "text-gray-800 dark:text-gray-200 hover:bg-gradient-to-r hover:from-red-400 hover:via-red-500 hover:to-red-800 hover:bg-clip-text hover:text-transparent"
+          }`}
+                >
+                  {link.name}
+
+                  {/* Active underline */}
+                  {isActive && (
+                    <span className="absolute -bottom-1 left-0 w-full h-0.5 rounded-full bg-gradient-to-r from-red-400 via-red-500 to-red-800"></span>
+                  )}
+                </Link>
+              );
+            })}
           </div>
 
           {/* Mobile/Tablet Navigation Menu */}
           <div
-            className={`lg:hidden fixed left-0 right-0 bg-white dark:bg-slate-900 shadow-2xl border-t border-gray-200 dark:border-slate-700 transition-all duration-300 ease-in-out z-40 ${
-              isMobileMenuOpen
-                ? "opacity-100 translate-y-0 visible top-[48px] sm:top-[52px] md:top-[56px]"
-                : "opacity-0 -translate-y-4 invisible top-[48px] sm:top-[52px] md:top-[56px]"
-            }`}
+            className={`lg:hidden fixed left-0 right-0 top-[56px]
+  bg-white dark:bg-slate-900
+  shadow-2xl border-t border-gray-200 dark:border-slate-700
+  z-40 transition-all duration-300 ease-in-out
+  ${
+    isMobileMenuOpen
+      ? "opacity-100 translate-y-0 pointer-events-auto"
+      : "opacity-0 -translate-y-4 pointer-events-none"
+  }`}
           >
-            <div className="px-3 sm:px-4 md:px-6 py-4 sm:py-5 md:py-6 space-y-1 max-h-[calc(100vh-48px)] sm:max-h-[calc(100vh-52px)] md:max-h-[calc(100vh-56px)] overflow-y-auto">
+            <div className="px-3 sm:px-4 md:px-6 py-4 sm:py-5 md:py-6 space-y-1 max-h-[calc(100vh-56px)] overflow-y-auto">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg font-medium text-sm sm:text-base transition-all duration-300 ${
-                    location.pathname === link.path
-                      ? "text-primary dark:text-primary-light bg-primary/10 dark:bg-primary/20"
-                      : "text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-slate-800"
-                  }`}
+                  className={`block px-3 sm:px-4 py-2.5 sm:py-3 rounded-lg
+  font-medium text-sm sm:text-base transition-all duration-300
+  ${
+    location.pathname === link.path
+      ? "text-red-600 bg-gradient-to-r from-red-400/20 via-red-500/20 to-red-800/20"
+      : "text-gray-800 dark:text-gray-200 hover:text-red-600 hover:bg-gradient-to-r hover:from-red-400/15 hover:via-red-500/15 hover:to-red-800/15"
+  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              {/* Mobile-only Get Started button */}
+
+              {/* Mobile-only CTA */}
               <Link
                 to="/contact"
-                className="block w-full text-center px-4 sm:px-6 py-2.5 sm:py-3 mt-3 sm:mt-4 rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base text-white bg-gradient-to-r from-primary to-primary-dark shadow-lg shadow-primary/35 hover:shadow-xl hover:shadow-primary/45 transition-all duration-400"
+                className="block w-full text-center mt-4 px-4 sm:px-6 py-2.5 sm:py-3
+  rounded-lg sm:rounded-xl font-semibold text-sm sm:text-base text-white
+  bg-gradient-to-r from-red-400 via-red-500 to-red-800
+  shadow-lg shadow-red-500/35 hover:shadow-xl hover:shadow-red-600/45
+  transition-all duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Get Started
+                Apply Now
               </Link>
             </div>
           </div>
@@ -152,12 +181,23 @@ const Navbar = () => {
             </button> */}
 
             {/* Desktop Get Started Button */}
-            <Link
-              to="/contact"
-              className="hidden lg:inline-block px-4 xl:px-6 py-2 xl:py-2.5 text-sm xl:text-base rounded-xl font-semibold text-white bg-gradient-to-r from-primary to-gray-300 shadow-lg shadow-primary/35 hover:shadow-xl hover:shadow-primary/45 hover:-translate-y-1 transition-all duration-400 ease-in-out relative overflow-hidden before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent before:transition-all before:duration-500 hover:before:left-full whitespace-nowrap flex-shrink-0"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSd1fjesYavPpxkhenWncyuxmoBaHIZAQKlOoDGLXzil4UasoA/viewform?usp=dialog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden lg:inline-block px-4 xl:px-6 py-2 xl:py-2.5 text-sm xl:text-base
+  rounded-xl font-semibold text-white
+  bg-gradient-to-r from-red-600 via-red-700 to-red-800
+  shadow-lg shadow-red-600/35 hover:shadow-xl hover:shadow-red-600/45
+  hover:-translate-y-1 transition-all duration-300 ease-in-out
+  relative overflow-hidden
+  before:content-[''] before:absolute before:top-0 before:-left-full before:w-full before:h-full
+  before:bg-gradient-to-r before:from-transparent before:via-white/30 before:to-transparent
+  before:transition-all before:duration-500 hover:before:left-full
+  whitespace-nowrap flex-shrink-0"
             >
-              Contact Us
-            </Link>
+              Apply Now
+            </a>
 
             {/* Mobile/Tablet Menu Toggle */}
             <button

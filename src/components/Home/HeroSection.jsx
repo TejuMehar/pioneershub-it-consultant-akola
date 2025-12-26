@@ -6,7 +6,7 @@ const slides = [
       "Accurate, organized, and error-free data cleaning for Excel and business databases",
     buttonText: "Our Services",
     buttonUrl: "/services",
-    image: "/serviceslider1.webp",
+    image: "/HomeHero.webp",
   },
   {
     title: "Professional Data Analytics",
@@ -63,7 +63,7 @@ export default function HeroSection() {
           <img
             src={slide.image}
             alt={slide.title}
-            className="absolute inset-0 w-full h-full object-cover opacity-80"
+            className="absolute inset-0 w-full h-full object-cover opacity-100"
           />
 
           {/* Overlay */}
@@ -88,7 +88,14 @@ export default function HeroSection() {
               </p>
               <a
                 href={slide.buttonUrl}
-                className="inline-block bg-violet-600 hover:bg-violet-700 px-8 py-3 rounded-lg text-lg font-semibold transition"
+                className="
+    inline-block px-8 py-3 rounded-lg text-lg font-semibold text-white
+    bg-gradient-to-r from-red-400 via-red-500 to-red-800
+    shadow-lg shadow-red-600/35
+    hover:shadow-xl hover:shadow-red-600/45
+    hover:-translate-y-0.5
+    transition-all duration-300 ease-in-out
+  "
               >
                 {slide.buttonText}
               </a>

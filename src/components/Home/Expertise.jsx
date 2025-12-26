@@ -1,5 +1,6 @@
 // Expertise.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 
 const services = [
   { icon: "🧹", label: "Data Cleaning" },
@@ -50,9 +51,18 @@ const Expertise = () => {
           </div>
 
           {/* CTA */}
-          <button className="inline-flex items-center px-6 py-3 rounded-full bg-blue-600 text-white text-sm font-semibold shadow-md hover:bg-blue-700 transition">
+          <Link
+            to="/services"
+            className="inline-flex items-center px-6 py-3 rounded-full
+             bg-gradient-to-r from-red-400 via-red-500 to-red-800
+             text-white text-sm font-semibold
+             shadow-md shadow-red-600/35
+             hover:shadow-lg hover:shadow-red-600/45
+             hover:-translate-y-0.5
+             transition-all duration-300"
+          >
             View Our Services →
-          </button>
+          </Link>
         </div>
       </div>
     </section>

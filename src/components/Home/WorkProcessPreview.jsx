@@ -1,36 +1,81 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
 
 const WorkProcessPreview = () => {
   const workProcess = [
-    { step: '01', title: 'Get Ideas', description: 'Understanding your vision and goals through comprehensive discovery sessions.' },
-    { step: '02', title: 'Sketch Up', description: 'Creating initial designs and wireframes to visualize the concept.' },
-    { step: '03', title: 'Discuss', description: 'Collaborating with stakeholders to refine requirements and approach.' },
-    { step: '04', title: 'Revise', description: 'Iterating based on feedback to perfect every detail.' },
-    { step: '05', title: 'Approve', description: 'Final review and sign-off before moving to production.' },
-    { step: '06', title: 'Launch', description: 'Deploying your solution and ensuring a smooth go-live.' },
+    {
+      step: "01",
+      title: "Data Collection",
+      description:
+        "Gather raw data from multiple sources including databases, spreadsheets, and APIs to ensure completeness.",
+    },
+    {
+      step: "02",
+      title: "Data Cleaning",
+      description:
+        "Remove duplicates, correct inconsistencies, and standardize formats to ensure accurate and reliable datasets.",
+    },
+    {
+      step: "03",
+      title: "Data Transformation",
+      description:
+        "Convert cleaned data into structured formats suitable for analysis, reporting, and visualization.",
+    },
+    {
+      step: "04",
+      title: "Data Analysis",
+      description:
+        "Perform statistical analysis and generate insights using advanced analytics tools and Excel automation.",
+    },
+    {
+      step: "05",
+      title: "Visualization & Reporting",
+      description:
+        "Create clear and interactive dashboards to help stakeholders understand trends, patterns, and actionable insights.",
+    },
+    {
+      step: "06",
+      title: "Automation & Delivery",
+      description:
+        "Automate repetitive tasks and workflows, deliver final outputs, and provide ongoing support for your data-driven solutions.",
+    },
   ];
 
   return (
-    <section className="py-20 bg-gray-50 dark:bg-slate-800">
+    <section className="py-24 bg-white dark:bg-slate-900">
       <div className="max-w-7xl mx-auto px-5">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-gray-800 dark:text-gray-100 mb-4">Work Process</h2>
-          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">Our proven methodology ensures seamless project delivery from initial concept to successful launch.</p>
+        {/* Heading */}
+        <div className="max-w-2xl mb-16">
+          <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
+            Our Work Process
+          </h2>
+          <p className="text-lg text-slate-600 dark:text-slate-400">
+            A structured approach to data cleaning, analysis, and delivery to
+            ensure accurate insights and reliable results.
+          </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {workProcess.map((process, index) => (
-            <div key={index} className="bg-white dark:bg-slate-900 p-8 rounded-2xl shadow-lg border border-gray-200 dark:border-slate-700 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1">
-              <div className="text-5xl font-extrabold bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent mb-4">{process.step}</div>
-              <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-2">{process.title}</h3>
-              <p className="text-gray-600 dark:text-gray-400">{process.description}</p>
+
+        {/* Process Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {workProcess.map((item, index) => (
+            <div
+              key={index}
+              className="border border-gray-200 dark:border-slate-700
+              rounded-xl p-8
+              hover:border-red-500 transition-colors duration-300"
+            >
+              <div className="flex items-center gap-4 mb-4">
+                <span className="text-red-600 font-bold text-lg">
+                  {item.step}
+                </span>
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white">
+                  {item.title}
+                </h3>
+              </div>
+              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+                {item.description}
+              </p>
             </div>
           ))}
-        </div>
-        <div className="text-center mt-10">
-          <Link to="/work-process" className="inline-block px-8 py-3.5 rounded-xl font-semibold text-primary dark:text-primary-light bg-transparent border-2 border-primary hover:bg-primary hover:text-white transition-all duration-300 hover:-translate-y-0.5 shadow-sm hover:shadow-lg hover:shadow-primary/35">
-            View Full Process
-          </Link>
         </div>
       </div>
     </section>

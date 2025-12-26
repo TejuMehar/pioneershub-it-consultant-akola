@@ -1,18 +1,18 @@
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Layout from './components/Layout';
-import ScrollToTop from './components/ScrollToTop';
-import Home from './pages/Home';
-import About from './pages/About';
-import WorkProcess from './pages/WorkProcess';
-import Testimonials from './pages/Testimonials';
-import Pricing from './pages/Pricing';
-import Team from './pages/Team';
-import Contact from './pages/Contact';
-import Loader from './components/Loader';
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import ScrollToTop from "./components/ScrollToTop";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import WorkProcess from "./pages/WorkProcess";
+import Testimonials from "./pages/Testimonials";
+import Pricing from "./pages/Pricing";
+import Team from "./pages/Team";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import Loader from "./components/Loader";
 
 const App = () => {
-
   // const [loading, setLoading] = useState(true);
 
   // useEffect(() => {
@@ -23,7 +23,7 @@ const App = () => {
 
   // if (loading) {
   //   return <Loader />; // 👈 Show loader first
-  // } 
+  // }
 
   return (
     <Router>
@@ -32,6 +32,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
           <Route path="work-process" element={<WorkProcess />} />
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="pricing" element={<Pricing />} />

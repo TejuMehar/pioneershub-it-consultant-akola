@@ -11,21 +11,23 @@ import {
 } from "../components/Home";
 
 import Expertise from "../components/Home/Expertise";
-import FAQ from "../components/Home/HomeFAQ"
+import FAQ from "../components/Home/HomeFAQ";
+import CompanyOverview from "../components/Home/CompnayView";
 
 const Home = () => {
   return (
     //  classname="pt-10"
     <div>
       <HeroSection />
+      <CompanyOverview />
+      <Expertise />
       <GrowthSection />
       <ServicesSection />
-      <Expertise />
       {/* <ProjectsSection /> */}
       <TechnologyStack />
       <WorkProcessPreview />
       <CTASection />
-      <FAQ/>
+      <FAQ />
     </div>
   );
 };

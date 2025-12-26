@@ -1,148 +1,161 @@
-import React, { useState } from 'react';
+import React from "react";
 
 const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    service: 'website-design',
-    message: ''
-  });
-
-  const handleChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      service: 'website-design',
-      message: ''
-    });
-  };
-
   return (
- <div className="bg-white/90 dark:bg-slate-900/90 backdrop-blur-xl p-6 rounded-3xl shadow-2xl border border-gray-100 dark:border-slate-700 max-w-3xl w-full mx-auto transition-all duration-500 hover:shadow-primary/30">
-  <form onSubmit={handleSubmit} className="space-y-5">
-    {/* Heading */}
-    <div className="text-center">
-      <h3 className="text-2xl font-extrabold text-gray-900 dark:text-gray-100 tracking-tight">
-        Let's Build Something Amazing 🚀
-      </h3>
-      <p className="text-gray-500 dark:text-gray-400 mt-1 text-sm">
-        Fill out the form and we’ll get back to you shortly.
-      </p>
-    </div>
+    <section className="relative max-w-7xl mx-auto px-4 py-16">
+      {/* Header Section */}
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Enquire About Our <span className="text-red-600">Programs</span>
+        </h1>
+        <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
+        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          Pioneershub helps you build future-ready skills in IT, Data, and
+          Technology. Fill out the form and our experts will connect with you.
+        </p>
+      </div>
 
-    {/* Name */}
-    <div>
-      <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-        Your Name *
-      </label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        value={formData.name}
-        onChange={handleChange}
-        required
-        placeholder="WebCultivate"
-        className="w-full px-3 py-2.5 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-800/70 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-sm shadow-sm hover:shadow-md"
-      />
-    </div>
+      {/* Form Container */}
+      <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
+        <div className="md:flex">
+          {/* Left Side */}
+          <div className="md:w-1/3 bg-gradient-to-br from-red-600 to-red-800 p-10 text-white flex flex-col justify-between">
+            <div>
+              <h2 className="text-2xl font-bold mb-4">
+                Why Choose Pioneershub?
+              </h2>
+              <ul className="space-y-4">
+                {[
+                  "Industry-oriented IT & Data training",
+                  "Mentorship from experienced professionals",
+                  "Hands-on projects & real-world case studies",
+                  "Career guidance & placement support",
+                ].map((item, index) => (
+                  <li key={index} className="flex items-start">
+                    <svg
+                      className="h-6 w-6 text-red-200 mr-2"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-    {/* Email */}
-    <div>
-      <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-        Email Address *
-      </label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        value={formData.email}
-        onChange={handleChange}
-        required
-        placeholder="info@webcultivate.com"
-        className="w-full px-3 py-2.5 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-800/70 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-sm shadow-sm hover:shadow-md"
-      />
-    </div>
+            <div className="mt-8">
+              <h3 className="text-lg font-semibold mb-2">
+                Need immediate assistance?
+              </h3>
+              <p className="text-red-100 mb-2">Call us at +91 9343771276</p>
+              <p className="text-sm text-red-200">
+                Our team is available 10AM - 6PM, Monday to Saturday
+              </p>
+            </div>
+          </div>
 
-    {/* Phone */}
-    <div>
-      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-        Phone Number
-      </label>
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        value={formData.phone}
-        onChange={handleChange}
-        placeholder="+91 7821096438"
-        className="w-full px-3 py-2.5 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-800/70 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-sm shadow-sm hover:shadow-md"
-      />
-    </div>
+          {/* Right Side - Form */}
+          <div className="md:w-2/3 p-10">
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Full Name */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    name="fullName"
+                    placeholder="pioneershub"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+                  />
+                </div>
 
-    {/* Service */}
-    <div>
-      <label htmlFor="service" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-        Service Interested In *
-      </label>
-<select
-  id="service"
-  name="service"
-  value={formData.service}
-  onChange={handleChange}
-  required
-  className="w-full px-3 py-2.5 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-800/70 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all text-sm shadow-sm hover:shadow-md"
->
-  <option value="">Select a Service</option>
-  <option value="website-design">Website Designing</option>
-  <option value="website-development">Website Development</option>
-  <option value="graphic-design">Graphic Designing</option>
-  <option value="domain-registration">Domain Registration</option>
-  <option value="business-email">Business Email</option>
-  <option value="digital-marketing">Digital Marketing</option>
-  <option value="other">Other</option>
-</select>
+                {/* Email */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="info@pioneershub.in"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+                  />
+                </div>
 
-    </div>
+                {/* Mobile Number */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Mobile Number
+                  </label>
+                  <input
+                    type="tel"
+                    name="mobileNumber"
+                    placeholder="+91 xxxxxxxxxx"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+                  />
+                </div>
 
-    {/* Message */}
-    <div>
-      <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
-        Your Message *
-      </label>
-      <textarea
-        id="message"
-        name="message"
-        value={formData.message}
-        onChange={handleChange}
-        required
-        rows="4"
-        placeholder="Tell us about your project..."
-        className="w-full px-3 py-2.5 rounded-xl border border-gray-300 dark:border-slate-600 bg-gray-50 dark:bg-slate-800/70 text-gray-800 dark:text-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all resize-none text-sm shadow-sm hover:shadow-md"
-      ></textarea>
-    </div>
+                {/* Program Selection */}
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    Program Interested In
+                  </label>
+                  <select
+                    name="programs"
+                    required
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500 bg-white"
+                  >
+                    <option value="">Select a Program</option>
+                    <option>Data Analytics</option>
+                    <option>Data Cleaning & Processing</option>
+                    <option>Web Development</option>
+                    <option>IT Consulting</option>
+                    <option>Career Coaching</option>
+                  </select>
+                </div>
+              </div>
 
-    {/* Submit Button */}
-    <button
-      type="submit"
-      className="w-full px-6 py-3 rounded-xl font-semibold text-white bg-gradient-to-r from-primary to-primary-dark shadow-lg shadow-primary/25 hover:shadow-primary/50 hover:-translate-y-0.5 hover:scale-[1.02] transition-all duration-300 text-sm"
-    >
-      Send Message ✉️
-    </button>
-  </form>
-</div>
+              {/* Message */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">
+                  Your Message
+                </label>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Tell us about your goals or queries..."
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-red-500 focus:border-red-500"
+                ></textarea>
+              </div>
 
+              {/* Submit */}
+              <div>
+                <button
+                  type="submit"
+                  className="w-full py-3 px-6 bg-red-600 text-white font-medium rounded-lg shadow-sm hover:bg-red-700 transition duration-300"
+                >
+                  Submit Enquiry
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
