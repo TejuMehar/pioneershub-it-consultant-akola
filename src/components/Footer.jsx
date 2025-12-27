@@ -69,27 +69,23 @@ const Footer = () => {
             <h4 className="mb-5 font-semibold text-base sm:text-lg text-left">
               Quick Links
             </h4>
-            <ul className="flex flex-col gap-3 items-start">
-              <li>
-                <Link to="/" className="footer-link">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="footer-link">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="footer-link">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="footer-link">
-                  Contact
-                </Link>
-              </li>
+
+            <ul className="flex flex-col gap-3">
+              <Link to="/" className="footer-link">
+                <li className="cursor-pointer">Home</li>
+              </Link>
+
+              <Link to="/about" className="footer-link">
+                <li className="cursor-pointer">About Us</li>
+              </Link>
+
+              <Link to="/services" className="footer-link">
+                <li className="cursor-pointer">Services</li>
+              </Link>
+
+              <Link to="/contact" className="footer-link">
+                <li className="cursor-pointer">Contact</li>
+              </Link>
             </ul>
           </div>
 
@@ -166,9 +162,9 @@ const Footer = () => {
             © {currentYear} Pioneers Hub. All rights reserved.
           </p>
 
-          <p className="text-sm text-gray-500 dark:text-gray-400 font-semibold md:order-0 text-left">
+          {/* <p className="text-sm text-gray-500 dark:text-gray-400 font-semibold md:order-0 text-left">
             Developed by <a href="https://webcultivate.com/">WebCultivate</a>
-          </p>
+          </p> */}
 
           <div className="flex gap-2 md:order-2">
             <Link

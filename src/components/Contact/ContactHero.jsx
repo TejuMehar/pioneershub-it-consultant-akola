@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 export default function ContactHero() {
   return (
     <section
-      className="w-full min-h-screen flex items-center justify-center relative overflow-hidden mt-[40px]" // leave space for navbar
+      className="w-full min-h-screen flex items-center justify-center relative overflow-hidden mt-[10px]" // leave space for navbar
       style={{
-        backgroundImage: `url("/Contact.webp")`,
+        backgroundImage: `url("https://res.cloudinary.com/dqnd97zne/image/upload/v1766827951/Contact_ejzwr9.webp")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}

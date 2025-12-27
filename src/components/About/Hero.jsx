@@ -47,7 +47,7 @@ const HeroSection = () => {
           viewport={{ once: true }}
         >
           <img
-            src="https://i.imgur.com/WbQnbas.png"
+            src="https://res.cloudinary.com/dqnd97zne/image/upload/v1766829459/undefined_-_Imgur_q4hnsg.png"
             alt="About Our Company"
             className="w-full max-w-md object-contain
                        hover:scale-105 transition-transform duration-500"

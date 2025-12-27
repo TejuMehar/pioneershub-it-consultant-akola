@@ -5,7 +5,7 @@ import {
   MissionVisionValues,
   WhyChooseUs,
 } from "../components/About";
-import TrustedClient from "../components/About/TrustedClient";
+// import TrustedClient from "../components/About/TrustedClient";
 import Hero from "../components/About/Hero";
 import AboutCTA from "../components/About/CTA";
 
@@ -15,7 +15,7 @@ const About = () => {
       <Hero />
       <AboutSection />
       <MissionVisionValues />
-      <TrustedClient />
+      {/* <TrustedClient /> */}
       <WhyChooseUs />
       <AboutCTA />
     </div>

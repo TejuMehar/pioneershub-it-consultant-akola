@@ -6,7 +6,8 @@ const slides = [
       "Accurate, organized, and error-free data cleaning for Excel and business databases",
     buttonText: "Our Services",
     buttonUrl: "/services",
-    image: "/HomeHero.webp",
+    image:
+      "https://res.cloudinary.com/dqnd97zne/image/upload/v1766827554/HomeHero_ctqigr.webp",
   },
   {
     title: "Professional Data Analytics",
@@ -14,7 +15,8 @@ const slides = [
       "Transform raw data into meaningful insights for better business decisions",
     buttonText: "About Us",
     buttonUrl: "/about",
-    image: "/serviceslider2.webp",
+    image:
+      "https://res.cloudinary.com/dqnd97zne/image/upload/v1766827708/serviceslider2_j8jeft.webp",
   },
   {
     title: "Excel Automation & IT Consulting",
@@ -22,7 +24,8 @@ const slides = [
       "Advanced Excel solutions, reports, dashboards, and IT consulting services",
     buttonText: "Contact Us",
     buttonUrl: "/contact",
-    image: "/serviceslider3.webp",
+    image:
+      "https://res.cloudinary.com/dqnd97zne/image/upload/v1766827804/serviceslider3_tdagbo.webp",
   },
 ];
 

@@ -8,7 +8,6 @@ const TrustedClient = () => {
     { name: "Codefficient", logo: Client1 },
     { name: "WedClicks", logo: Client2 },
     { name: "CloudGraphics", logo: Client3 },
-    { name: "Codefficient", logo: Client1 },
     { name: "WedClicks", logo: Client2 },
   ];
 
