@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   HeroSection,
   ServicesSection,
@@ -15,6 +15,10 @@ import FAQ from "../components/Home/HomeFAQ";
 import CompanyOverview from "../components/Home/CompnayView";
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "Pioneershub - IT Consulting & Data Analytics Services in Akola";
+  }, []);
+
   return (
     //  classname="pt-10"
     <div>

@@ -10,6 +10,12 @@ import Pricing from "./pages/Pricing";
 import Team from "./pages/Team";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
+import Career from "./pages/Career";
+import Blog from "./pages/Blog";
+import DataAnalyticsAkola from "./pages/DataAnalyticsAkola";
+import ExcelTrainingAkola from "./pages/ExcelTrainingAkola";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfService from "./pages/TermsOfService";
 import Loader from "./components/Loader";
 
 const App = () => {
@@ -37,6 +43,12 @@ const App = () => {
           <Route path="testimonials" element={<Testimonials />} />
           <Route path="pricing" element={<Pricing />} />
           {/* <Route path="team" element={<Team />} /> */}
+          <Route path="career" element={<Career />} />
+          <Route path="blog" element={<Blog />} />
+          <Route path="blog/data-analytics-akola" element={<DataAnalyticsAkola />} />
+          <Route path="blog/excel-training-akola" element={<ExcelTrainingAkola />} />
+          <Route path="privacy" element={<PrivacyPolicy />} />
+          <Route path="terms" element={<TermsOfService />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { PageHeader } from "../components/shared";
 import {
   AboutSection,
@@ -10,6 +10,10 @@ import Hero from "../components/About/Hero";
 import AboutCTA from "../components/About/CTA";
 
 const About = () => {
+  useEffect(() => {
+    document.title = "About Us - Pioneershub IT Consulting Company Akola";
+  }, []);
+
   return (
     <div className=" bg-gradient-to-br from-blue-50 via-white to-sky-50 dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
       <Hero />

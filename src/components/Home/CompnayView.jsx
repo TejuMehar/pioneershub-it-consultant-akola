@@ -63,9 +63,9 @@ const CompanyOverview = () => {
             <div className="absolute bottom-4 left-4 right-4 rounded-xl bg-white/90 p-4 backdrop-blur dark:bg-gray-900/90">
               <div className="grid grid-cols-3 text-center gap-2">
                 {[
-                  { value: "6+", label: "Years" },
-                  { value: "50+", label: "Projects" },
-                  { value: "25+", label: "Clients" },
+                  { value: "New", label: "Startup" },
+                  { value: "5+", label: "Projects" },
+                  { value: "10+", label: "Clients" },
                 ].map((item, i) => (
                   <div key={i}>
                     <div className="text-xl font-bold text-gray-900 dark:text-white">
